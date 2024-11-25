@@ -2,14 +2,23 @@
     "name": "zaporylie/drush-current-language",
     "description": "Makes sure the current language is correctly resolved and translation_manager knows of it.",
     "type": "drupal-drush",
-    "require": {
-        "drush/drush": "~13"
-    },
     "license": "GPL-2.0+",
     "authors": [
         {
             "name": "Jakub Piasecki",
             "email": "jakub@piaseccy.pl"
         }
-    ]
+    ],
+    "config": {
+        "platform": {
+            "php": "8.2"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "drush/drush": "~13"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7"
+    }
 }
